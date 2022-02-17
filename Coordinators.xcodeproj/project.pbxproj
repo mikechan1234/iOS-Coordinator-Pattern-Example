@@ -13,14 +13,21 @@
 		82F2B3AF27BE53BF00CE9B43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F2B3AD27BE53BF00CE9B43 /* Main.storyboard */; };
 		82F2B3B127BE53BF00CE9B43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82F2B3B027BE53BF00CE9B43 /* Assets.xcassets */; };
 		82F2B3B427BE53BF00CE9B43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F2B3B227BE53BF00CE9B43 /* LaunchScreen.storyboard */; };
-		82F2B3BF27BE563F00CE9B43 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F2B3BD27BE563F00CE9B43 /* FirstViewController.swift */; };
-		82F2B3C027BE563F00CE9B43 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82F2B3BE27BE563F00CE9B43 /* FirstViewController.xib */; };
+		82F2B3C027BE563F00CE9B43 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82F2B3BE27BE563F00CE9B43 /* HomeViewController.xib */; };
 		82F2B3C427BE573C00CE9B43 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F2B3C227BE573C00CE9B43 /* SecondViewController.swift */; };
 		82F2B3C527BE573C00CE9B43 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82F2B3C327BE573C00CE9B43 /* SecondViewController.xib */; };
 		82F2B3C827BE576500CE9B43 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F2B3C727BE576500CE9B43 /* Coordinator.swift */; };
-		82F2B3CC27BE5B6900CE9B43 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F2B3CB27BE5B6900CE9B43 /* MainCoordinator.swift */; };
-		82F2B3D127BE5BFC00CE9B43 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F2B3CF27BE5BFC00CE9B43 /* ThirdViewController.swift */; };
-		82F2B3D227BE5BFC00CE9B43 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82F2B3D027BE5BFC00CE9B43 /* ThirdViewController.xib */; };
+		82F2B3CC27BE5B6900CE9B43 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F2B3CB27BE5B6900CE9B43 /* HomeCoordinator.swift */; };
+		82F2B3D127BE5BFC00CE9B43 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F2B3CF27BE5BFC00CE9B43 /* PersonViewController.swift */; };
+		82F2B3D527BE8F8800CE9B43 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F2B3D427BE8F8800CE9B43 /* MainTabBarController.swift */; };
+		82F2B3D727BE91CF00CE9B43 /* PersonCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F2B3D627BE91CF00CE9B43 /* PersonCoordinator.swift */; };
+		82F2B3DB27BE9B2C00CE9B43 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F2B3DA27BE9B2C00CE9B43 /* LoginCoordinator.swift */; };
+		82F2B3E027BE9B9F00CE9B43 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F2B3DE27BE9B9F00CE9B43 /* LoginViewController.swift */; };
+		82F2B3E127BE9B9F00CE9B43 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82F2B3DF27BE9B9F00CE9B43 /* LoginViewController.xib */; };
+		82F2B3E527BE9CBA00CE9B43 /* LoginSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F2B3E327BE9CBA00CE9B43 /* LoginSuccessViewController.swift */; };
+		82F2B3E627BE9CBA00CE9B43 /* LoginSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82F2B3E427BE9CBA00CE9B43 /* LoginSuccessViewController.xib */; };
+		82F2B3EA27BE9E2C00CE9B43 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F2B3BD27BE563F00CE9B43 /* HomeViewController.swift */; };
+		82F2B3ED27BE9E5900CE9B43 /* PersonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82F2B3EC27BE9E5900CE9B43 /* PersonViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,14 +39,21 @@
 		82F2B3B027BE53BF00CE9B43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82F2B3B327BE53BF00CE9B43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82F2B3B527BE53BF00CE9B43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		82F2B3BD27BE563F00CE9B43 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		82F2B3BE27BE563F00CE9B43 /* FirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		82F2B3BD27BE563F00CE9B43 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		82F2B3BE27BE563F00CE9B43 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		82F2B3C227BE573C00CE9B43 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		82F2B3C327BE573C00CE9B43 /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 		82F2B3C727BE576500CE9B43 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		82F2B3CB27BE5B6900CE9B43 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
-		82F2B3CF27BE5BFC00CE9B43 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
-		82F2B3D027BE5BFC00CE9B43 /* ThirdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
+		82F2B3CB27BE5B6900CE9B43 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		82F2B3CF27BE5BFC00CE9B43 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		82F2B3D427BE8F8800CE9B43 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		82F2B3D627BE91CF00CE9B43 /* PersonCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCoordinator.swift; sourceTree = "<group>"; };
+		82F2B3DA27BE9B2C00CE9B43 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		82F2B3DE27BE9B9F00CE9B43 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		82F2B3DF27BE9B9F00CE9B43 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		82F2B3E327BE9CBA00CE9B43 /* LoginSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSuccessViewController.swift; sourceTree = "<group>"; };
+		82F2B3E427BE9CBA00CE9B43 /* LoginSuccessViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginSuccessViewController.xib; sourceTree = "<group>"; };
+		82F2B3EC27BE9E5900CE9B43 /* PersonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,26 +89,25 @@
 				82F2B3B527BE53BF00CE9B43 /* Info.plist */,
 				82F2B3A727BE53BF00CE9B43 /* AppDelegate.swift */,
 				82F2B3C727BE576500CE9B43 /* Coordinator.swift */,
-				82F2B3CB27BE5B6900CE9B43 /* MainCoordinator.swift */,
+				82F2B3D427BE8F8800CE9B43 /* MainTabBarController.swift */,
 				82F2B3A927BE53BF00CE9B43 /* SceneDelegate.swift */,
 				82F2B3AB27BE53BF00CE9B43 /* ViewController.swift */,
 				82F2B3B027BE53BF00CE9B43 /* Assets.xcassets */,
-				82F2B3C127BE572B00CE9B43 /* FirstViewController */,
+				82F2B3D827BE976B00CE9B43 /* Coordinators */,
+				82F2B3D927BE997600CE9B43 /* View Controllers */,
 				82F2B3B227BE53BF00CE9B43 /* LaunchScreen.storyboard */,
 				82F2B3AD27BE53BF00CE9B43 /* Main.storyboard */,
-				82F2B3C627BE573F00CE9B43 /* SecondViewController */,
-				82F2B3D327BE5C0500CE9B43 /* ThirdViewController */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
-		82F2B3C127BE572B00CE9B43 /* FirstViewController */ = {
+		82F2B3C127BE572B00CE9B43 /* HomeViewController */ = {
 			isa = PBXGroup;
 			children = (
-				82F2B3BD27BE563F00CE9B43 /* FirstViewController.swift */,
-				82F2B3BE27BE563F00CE9B43 /* FirstViewController.xib */,
+				82F2B3BD27BE563F00CE9B43 /* HomeViewController.swift */,
+				82F2B3BE27BE563F00CE9B43 /* HomeViewController.xib */,
 			);
-			path = FirstViewController;
+			path = HomeViewController;
 			sourceTree = "<group>";
 		};
 		82F2B3C627BE573F00CE9B43 /* SecondViewController */ = {
@@ -106,13 +119,53 @@
 			path = SecondViewController;
 			sourceTree = "<group>";
 		};
-		82F2B3D327BE5C0500CE9B43 /* ThirdViewController */ = {
+		82F2B3D327BE5C0500CE9B43 /* PersonViewController */ = {
 			isa = PBXGroup;
 			children = (
-				82F2B3CF27BE5BFC00CE9B43 /* ThirdViewController.swift */,
-				82F2B3D027BE5BFC00CE9B43 /* ThirdViewController.xib */,
+				82F2B3CF27BE5BFC00CE9B43 /* PersonViewController.swift */,
+				82F2B3EC27BE9E5900CE9B43 /* PersonViewController.xib */,
 			);
-			path = ThirdViewController;
+			path = PersonViewController;
+			sourceTree = "<group>";
+		};
+		82F2B3D827BE976B00CE9B43 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				82F2B3CB27BE5B6900CE9B43 /* HomeCoordinator.swift */,
+				82F2B3D627BE91CF00CE9B43 /* PersonCoordinator.swift */,
+				82F2B3DA27BE9B2C00CE9B43 /* LoginCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		82F2B3D927BE997600CE9B43 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				82F2B3C127BE572B00CE9B43 /* HomeViewController */,
+				82F2B3E727BE9CC100CE9B43 /* LoginSuccessViewController */,
+				82F2B3E227BE9BA500CE9B43 /* LoginViewController */,
+				82F2B3D327BE5C0500CE9B43 /* PersonViewController */,
+				82F2B3C627BE573F00CE9B43 /* SecondViewController */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		82F2B3E227BE9BA500CE9B43 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				82F2B3DE27BE9B9F00CE9B43 /* LoginViewController.swift */,
+				82F2B3DF27BE9B9F00CE9B43 /* LoginViewController.xib */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		82F2B3E727BE9CC100CE9B43 /* LoginSuccessViewController */ = {
+			isa = PBXGroup;
+			children = (
+				82F2B3E327BE9CBA00CE9B43 /* LoginSuccessViewController.swift */,
+				82F2B3E427BE9CBA00CE9B43 /* LoginSuccessViewController.xib */,
+			);
+			path = LoginSuccessViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,12 +226,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82F2B3E627BE9CBA00CE9B43 /* LoginSuccessViewController.xib in Resources */,
 				82F2B3B427BE53BF00CE9B43 /* LaunchScreen.storyboard in Resources */,
 				82F2B3B127BE53BF00CE9B43 /* Assets.xcassets in Resources */,
-				82F2B3D227BE5BFC00CE9B43 /* ThirdViewController.xib in Resources */,
 				82F2B3AF27BE53BF00CE9B43 /* Main.storyboard in Resources */,
-				82F2B3C027BE563F00CE9B43 /* FirstViewController.xib in Resources */,
+				82F2B3C027BE563F00CE9B43 /* HomeViewController.xib in Resources */,
+				82F2B3E127BE9B9F00CE9B43 /* LoginViewController.xib in Resources */,
 				82F2B3C527BE573C00CE9B43 /* SecondViewController.xib in Resources */,
+				82F2B3ED27BE9E5900CE9B43 /* PersonViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,13 +244,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82F2B3E027BE9B9F00CE9B43 /* LoginViewController.swift in Sources */,
 				82F2B3C427BE573C00CE9B43 /* SecondViewController.swift in Sources */,
-				82F2B3CC27BE5B6900CE9B43 /* MainCoordinator.swift in Sources */,
-				82F2B3BF27BE563F00CE9B43 /* FirstViewController.swift in Sources */,
+				82F2B3E527BE9CBA00CE9B43 /* LoginSuccessViewController.swift in Sources */,
+				82F2B3CC27BE5B6900CE9B43 /* HomeCoordinator.swift in Sources */,
+				82F2B3D527BE8F8800CE9B43 /* MainTabBarController.swift in Sources */,
+				82F2B3EA27BE9E2C00CE9B43 /* HomeViewController.swift in Sources */,
+				82F2B3DB27BE9B2C00CE9B43 /* LoginCoordinator.swift in Sources */,
 				82F2B3C827BE576500CE9B43 /* Coordinator.swift in Sources */,
+				82F2B3D727BE91CF00CE9B43 /* PersonCoordinator.swift in Sources */,
 				82F2B3AC27BE53BF00CE9B43 /* ViewController.swift in Sources */,
 				82F2B3A827BE53BF00CE9B43 /* AppDelegate.swift in Sources */,
-				82F2B3D127BE5BFC00CE9B43 /* ThirdViewController.swift in Sources */,
+				82F2B3D127BE5BFC00CE9B43 /* PersonViewController.swift in Sources */,
 				82F2B3AA27BE53BF00CE9B43 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThirdViewController" customModule="Coordinators" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Coordinators" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -18,18 +18,28 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Third" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqe-CP-wqb">
-                    <rect key="frame" x="187" y="442.5" width="40" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2Q-G8-5hf">
+                    <rect key="frame" x="184" y="442.5" width="46" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzU-ZP-H9w">
+                    <rect key="frame" x="170.5" y="473.5" width="73" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Second"/>
+                    <connections>
+                        <action selector="secondButtonTapped:" destination="-1" eventType="touchUpInside" id="xEi-Ej-2P6"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="kqe-CP-wqb" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="54J-e8-lVx"/>
-                <constraint firstItem="kqe-CP-wqb" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="CC2-aX-4aC"/>
+                <constraint firstItem="e2Q-G8-5hf" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="ULL-QR-dC9"/>
+                <constraint firstItem="fzU-ZP-H9w" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="jf8-Yr-N6w"/>
+                <constraint firstItem="fzU-ZP-H9w" firstAttribute="top" secondItem="e2Q-G8-5hf" secondAttribute="bottom" constant="10" id="n6P-YX-7rP"/>
+                <constraint firstItem="e2Q-G8-5hf" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="pYt-j5-MFY"/>
             </constraints>
             <point key="canvasLocation" x="139" y="114"/>
         </view>

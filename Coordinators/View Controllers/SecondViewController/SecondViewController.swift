@@ -9,7 +9,7 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
-    weak var coordinator: MainCoordinator?
+    weak var coordinator: PersonCoordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
