@@ -77,6 +77,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8216A0EB27BFAA2E009F8301 /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				82F2B3E727BE9CC100CE9B43 /* LoginSuccessViewController */,
+				82F2B3E227BE9BA500CE9B43 /* LoginViewController */,
+				82F2B3D327BE5C0500CE9B43 /* PersonViewController */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		8216A0EC27BFAA35009F8301 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				82F2B3C127BE572B00CE9B43 /* HomeViewController */,
+				82F2B3C627BE573F00CE9B43 /* SecondViewController */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		82F2B39B27BE53BF00CE9B43 = {
 			isa = PBXGroup;
 			children = (
@@ -154,11 +173,8 @@
 		82F2B3D927BE997600CE9B43 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				82F2B3C127BE572B00CE9B43 /* HomeViewController */,
-				82F2B3E727BE9CC100CE9B43 /* LoginSuccessViewController */,
-				82F2B3E227BE9BA500CE9B43 /* LoginViewController */,
-				82F2B3D327BE5C0500CE9B43 /* PersonViewController */,
-				82F2B3C627BE573F00CE9B43 /* SecondViewController */,
+				8216A0EC27BFAA35009F8301 /* Home */,
+				8216A0EB27BFAA2E009F8301 /* Person */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
