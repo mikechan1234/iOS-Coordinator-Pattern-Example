@@ -20,9 +20,10 @@ class HomeCoordinator: Coordinator {
     }
     
     func start() {
-            
-        let viewController = HomeViewController(nibName: String(describing: HomeViewController.self), bundle: nil)
-        viewController.coordinator = self
+        
+        let viewModel = HomeViewController.ViewModel(coordinator: self)
+        let viewController = HomeViewController(viewModel: viewModel)
+        
         viewController.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house"), selectedImage: UIImage(systemName: "house.fill"))
         
         navigationController.pushViewController(viewController, animated: true)
@@ -34,10 +35,11 @@ class HomeCoordinator: Coordinator {
 //MARK: Other presentation functions
 extension HomeCoordinator {
     
-    
     func secondView() {
         
-        let viewController = SecondViewController(nibName: String(describing: SecondViewController.self), bundle: nil)
+        let viewModel = SecondViewController.ViewModel(coordinator: self)
+        let viewController = SecondViewController(viewModel: viewModel)
+        
         navigationController.pushViewController(viewController, animated: true)
         
     }

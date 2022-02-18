@@ -20,8 +20,9 @@ class PersonCoordinator: NSObject, Coordinator {
     
     func start() {
             
-        let viewController = PersonViewController(nibName: String(describing: PersonViewController.self), bundle: nil)
-        viewController.coordinator = self
+        let viewModel = PersonViewController.ViewModel(coordinator: self)
+        let viewController = PersonViewController(viewModel: viewModel)
+        
         viewController.tabBarItem = UITabBarItem(title: "Person", image: UIImage(systemName: "person"), selectedImage: UIImage(systemName: "person.fill"))
         
         navigationController.pushViewController(viewController, animated: true)
@@ -67,7 +68,7 @@ extension PersonCoordinator: UINavigationControllerDelegate {
         
         if let loginViewController = fromViewController as? LoginViewController {
             
-            childCoordinatorDidFinish(loginViewController.coordinator)
+            childCoordinatorDidFinish(loginViewController.viewModel.coordinator)
             
         }
         

@@ -9,10 +9,29 @@ import UIKit
 
 class PersonViewController: UIViewController {
 
-    weak var coordinator: PersonCoordinator?
+    let viewModel: ViewModel
     
     @IBOutlet weak var loginViewButton: UIButton!
     
+    init(viewModel: ViewModel) {
+        
+        self.viewModel = viewModel
+        super.init(nibName: String(describing: PersonViewController.self), bundle: nil)
+        
+    }
+    
+    required init?(coder: NSCoder) {
+        
+        fatalError("Must use init(viewModel:)")
+        
+    }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        
+        fatalError("Must use init(viewModel:)")
+        
+    }
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,7 +45,7 @@ extension PersonViewController {
 
     @IBAction func loginViewButtonTapped(_ sender: UIButton) {
         
-        coordinator?.login()
+        viewModel.login()
         
     }
     

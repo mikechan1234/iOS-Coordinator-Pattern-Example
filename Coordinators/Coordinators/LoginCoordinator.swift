@@ -20,8 +20,8 @@ class LoginCoordinator: Coordinator {
     
     func start() {
      
-        let viewController = LoginViewController(nibName: String(describing: LoginViewController.self), bundle: nil)
-        viewController.coordinator = self
+        let viewModel = LoginViewController.ViewModel(coordinator: self)
+        let viewController = LoginViewController(viewModel: viewModel)
         
         navigationController.pushViewController(viewController, animated: true)
         
@@ -33,7 +33,9 @@ extension LoginCoordinator {
     
     func loginSucceeded() {
         
-        let viewController = LoginViewController(nibName: String(describing: LoginSuccessViewController.self), bundle: nil)
+        let viewModel = LoginSuccessViewController.ViewModel(coordinator: self)
+        let viewController = LoginSuccessViewController(viewModel: viewModel)
+        
         navigationController.pushViewController(viewController, animated: true)
         
     }

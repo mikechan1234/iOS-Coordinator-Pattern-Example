@@ -9,14 +9,32 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    weak var coordinator: HomeCoordinator?
+    let viewModel: ViewModel
+    
+    init(viewModel: ViewModel) {
+        
+        self.viewModel = viewModel
+        super.init(nibName: String(describing: HomeViewController.self), bundle: nil)
+        
+    }
+    
+    required init?(coder: NSCoder) {
+        
+        fatalError("Must use init(viewModel:)")
+        
+    }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        
+        fatalError("Must use init(viewModel:)")
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
 
 }
 
@@ -25,7 +43,7 @@ extension HomeViewController {
     
     @IBAction func secondButtonTapped(_ sender: UIButton) {
         
-        coordinator?.secondView()
+        viewModel.second()
         
     }
     

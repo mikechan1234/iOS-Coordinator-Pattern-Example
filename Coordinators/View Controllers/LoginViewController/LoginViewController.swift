@@ -9,9 +9,28 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    weak var coordinator: LoginCoordinator?
+    let viewModel: ViewModel
     
     @IBOutlet weak var loginButton: UIButton!
+    
+    init(viewModel: ViewModel) {
+        
+        self.viewModel = viewModel
+        super.init(nibName: String(describing: LoginViewController.self), bundle: nil)
+        
+    }
+    
+    required init?(coder: NSCoder) {
+        
+        fatalError("Must use init(viewModel:)")
+        
+    }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        
+        fatalError("Must use init(viewModel:)")
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +45,7 @@ extension LoginViewController {
 
     @IBAction func loginButtonTapped(_ sender: UIButton) {
         
-        coordinator?.loginSucceeded()
+        viewModel.loginSucceeded()
         
     }
     
