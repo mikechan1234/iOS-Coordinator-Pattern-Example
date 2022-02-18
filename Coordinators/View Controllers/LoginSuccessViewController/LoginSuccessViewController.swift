@@ -11,6 +11,8 @@ class LoginSuccessViewController: UIViewController {
 
     let viewModel: ViewModel
     
+    @IBOutlet weak var textLabel: UILabel!
+    
     init(viewModel: ViewModel) {
         
         self.viewModel = viewModel
@@ -34,6 +36,9 @@ class LoginSuccessViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        textLabel.text = viewModel.descriptionText
+        
     }
 
 }

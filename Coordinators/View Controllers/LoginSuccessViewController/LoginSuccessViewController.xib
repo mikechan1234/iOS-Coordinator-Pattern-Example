@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginSuccessViewController" customModule="Coordinators" customModuleProvider="target">
             <connections>
+                <outlet property="textLabel" destination="8Te-OS-Gph" id="dSx-Fo-Vo2"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

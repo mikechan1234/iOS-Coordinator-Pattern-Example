@@ -31,9 +31,9 @@ class LoginCoordinator: Coordinator {
 
 extension LoginCoordinator {
     
-    func loginSucceeded() {
+    func loginResult(success: Bool) {
         
-        let viewModel = LoginSuccessViewController.ViewModel(coordinator: self)
+        let viewModel = LoginSuccessViewController.ViewModel(success: success, coordinator: self)
         let viewController = LoginSuccessViewController(viewModel: viewModel)
         
         navigationController.pushViewController(viewController, animated: true)

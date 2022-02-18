@@ -13,7 +13,11 @@ extension LoginSuccessViewController {
         
         weak var coordinator: LoginCoordinator?
         
-        init(coordinator: LoginCoordinator?) {
+        let descriptionText: String
+        
+        init(success: Bool, coordinator: LoginCoordinator?) {
+            
+            descriptionText = success ? "Login Success" : "Login Failed"
             
             self.coordinator = coordinator
             

@@ -28,7 +28,7 @@ extension LoginViewController.ViewModel {
     
     func loginSucceeded() {
         
-        coordinator?.loginSucceeded()
+        coordinator?.loginResult(success: Bool.random())
         
     }
     
